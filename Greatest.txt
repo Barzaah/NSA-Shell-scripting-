@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Enter Mark 1: "
+read num1
+echo "Enter Mark 2: "
+read num2
+echo "Enter Mark 3: "
+read num3
+sum=$(( num1 + num2 + num3 ))
+avg=$((sum / 3))
+echo "Average= $avg"
+if [ $avg -gt 90 ]
+then
+        echo "Your grade is A "
+elif [ $avg -gt 60 ]
+then
+        echo "Your grade is B"
+else
+        echo "You are failed"
+fi
+~
+~
